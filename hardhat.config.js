@@ -26,6 +26,9 @@ module.exports = {
     deployer: {
       default: 0, // ethers built in accounts at index 0
     },
+    deployer2: {
+      default: 1, // ethers built in accounts at index 0
+    },
   },
   networks: {
     hardhat: {
