@@ -1,0 +1,10 @@
+// call these function one by one in console to clear this level
+await contract.info() 
+param = await contract.info1()
+await contract.info2(param)
+await contract.infoNum()
+await contract.info42()
+await contract.theMethodName()
+await contract.method7123949()
+pass = await contract.password()
+await contract.authenticate(pass)
