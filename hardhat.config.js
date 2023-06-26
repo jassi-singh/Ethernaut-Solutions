@@ -43,6 +43,15 @@ module.exports = {
       gas: 2100000,
       gasPrice: 8000000000,
     },
+    sepolia: {
+      url: "https://rpc.sepolia.org",
+      chainId: 11155111,
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+      timeout: 60000,
+      gas: 2100000,
+      gasPrice: 8000000000,
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,

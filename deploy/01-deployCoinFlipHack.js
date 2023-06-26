@@ -9,7 +9,7 @@ module.exports = async function (hre) {
   const coinFlipAddress =
     chainId === 31337
       ? (await ethers.getContract("CoinFlip")).address
-      : "0x4dF32584890A0026e56f7535d0f2C6486753624f";
+      : "0x37456850971E6Fd71bA6e7B95C45664aaE857bc9"; /// put instance of CoinFlip contract here
 
   const coinFlipHack = await deploy("CoinFlipHack", {
     from: deployer,

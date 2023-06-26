@@ -1,1 +1,1 @@
-await contract.Fallout()
+await contract.Fal1out()
