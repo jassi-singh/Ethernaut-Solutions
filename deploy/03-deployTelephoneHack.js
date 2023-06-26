@@ -9,7 +9,7 @@ module.exports = async function (hre) {
   const telephoneAddress =
     chainId === 31337
       ? (await ethers.getContract("Telephone")).address
-      : "0x4e099594eb999E90569399a2452Ee1f7672c582c";
+      : "0xf6D58BA559bEE48102717b05d5eF53AdBDE93E54";
 
   const telephoneHack = await deploy("TelephoneHack", {
     from: deployer,
@@ -20,4 +20,4 @@ module.exports = async function (hre) {
   console.log("\tTelephoneHack is Deployed at : ", telephoneHack.address);
 };
 
-module.exports.tags = ["all", "TelephoneHack"];
+module.exports.tags = ["all", "Telephone", "TelephoneHack"];

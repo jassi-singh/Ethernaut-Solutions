@@ -20,4 +20,4 @@ module.exports = async function (hre) {
   console.log("\tCoinFlipHack is Deployed at : ", coinFlipHack.address);
 };
 
-module.exports.tags = ["all", "CoinFlipHack"];
+module.exports.tags = ["all", "CoinFlip", "CoinFlipHack"];
