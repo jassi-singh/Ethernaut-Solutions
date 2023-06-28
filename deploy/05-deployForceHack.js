@@ -14,4 +14,4 @@ module.exports = async function (hre) {
   console.log("\tForceHack is Deployed at : ", forceHack.address);
 };
 
-module.exports.tags = ["all", "ForceHack"];
+module.exports.tags = ["all", "Force", "ForceHack"];
